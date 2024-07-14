@@ -1,3 +1,47 @@
+// loader code
+document.addEventListener('DOMContentLoaded', () => {
+    // Function to animate blinders rolling in
+    const animateBlinders = () => {
+        gsap.from('.blinder', {
+            y: '-100%',
+            duration: 1,
+            stagger: 0.2,
+            ease: 'power3.out'
+        });
+    };
+
+    // Set a timeout to delay the execution of the loader animation
+    setTimeout(() => {
+        const timeline = gsap.timeline({
+            onComplete: () => {
+                // Hide loader and reveal content
+                document.querySelector('.loader').style.display = 'none';
+                gsap.to('.hidden-content', {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: 'power4.out',
+                    onComplete: animateBlinders // Trigger blinder animation after content reveal
+                });
+            }
+        });
+
+        // SVG and blinder animation
+        timeline.to('svg', {
+            scale: 0,
+            duration: 0.5,
+            ease: 'power3.inOut'
+        }).to('.blinder', {
+            scaleY: 0,
+            duration: 0.5,
+            stagger: 0.3,
+            ease: 'power3.out'
+        }, '-=0.5');
+    }, 3000); 
+});
+
+
+
 window.addEventListener('scroll', function () {
     const scrollValue = window.scrollY;
     const fastScrollElement = document.querySelector('#herobottle1');
