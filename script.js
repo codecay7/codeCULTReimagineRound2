@@ -45,7 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+gsap.from(".contentLogo", {
+    opacity: 1,
 
+    y: -60,
+    duration: 1,
+    delay: 5.5,
+    stagger: 1,
+
+});
 
 
 gsap.from("nav img", {
