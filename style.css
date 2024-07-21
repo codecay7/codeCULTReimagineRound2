@@ -383,7 +383,7 @@ header {
   z-index: 1000;
   width: 100%;
   /* background-color: rgba(0, 123, 95, 0.5); */
-  background-color: #80cb1e;
+  background-color: #A5BAEF;
   /* BISLERI green */
   color: white;
   padding: 2vh 0;
@@ -548,7 +548,8 @@ nav a:hover {
 .hero {
   position: relative;
   background: linear-gradient(
-    rgba(118, 199, 12, 0.926),
+/*     rgba(118, 199, 12, 0.926), */
+    #A5BAEF,
     rgba(0, 123, 117, 0.5)
   );
   background-size: cover;
