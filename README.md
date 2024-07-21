@@ -68,10 +68,10 @@ We welcome contributions to improve this project! To contribute:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Team Members
-- [Diwkar Kumar](https://github.com/codecay7) - Project Lead
-- [Sudhansh Mishra](https://github.com/codecay7) - 
-- [Satendra Kumar](https://github.com/codecay7) - 
-- [Suryansh Kumar](https://github.com/codecay7) - 
+- [Diwkar Kumar](https://github.com/codecay7)
+- [Sudhansh Mishra]
+- [Satendra Kumar]
+- [Suryansh Kumar]
 
 ## Acknowledgments
 - Thanks to Sheryians Coding School for hosting the competition.
