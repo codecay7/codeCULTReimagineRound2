@@ -390,7 +390,7 @@ header {
 }
 .chat-icon {
   overflow: hidden;
-  position: fixed;margin-bottom: 76vh;
+  position: fixed;margin-bottom: 0;
   bottom: 1vw;
   right: 1vw;
   background-color: #000000;
@@ -488,8 +488,7 @@ nav {
   }
 }
 nav img {
-  /* background-co
-  cvulor: #0072ff; */
+
   height: 6vh;
   padding-left: -400px;
   cursor: pointer;
@@ -1449,9 +1448,9 @@ footer {
   }
 
   .chat-icon {
-    bottom: 10px;
     height: 10vw;
     width: 10vw;
+    margin-bottom: 74vh;
   }
 
   .social-media-links li {
