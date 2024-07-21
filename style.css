@@ -1273,7 +1273,7 @@ footer {
 
 @media (max-width: 480px) {
   nav {
-    margin-top: -5px;
+    margin-top: 0px;
   }
   nav ul {
     display: none;
