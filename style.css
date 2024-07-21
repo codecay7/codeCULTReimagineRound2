@@ -632,7 +632,8 @@ nav a:hover {
 #refreshing {
   font-family: "Pacifico", cursive;
   /* color: #ffffffa9; */
-  color: #a5baef;
+/*   color: #a5baef; */
+  color: #c1cce9;
   letter-spacing: 15px;
   font-size: 17vw;
 }
