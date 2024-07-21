@@ -1276,14 +1276,14 @@ footer {
 
 @media (max-width: 480px) {
   nav {
-    margin-top: 0px;
+    margin-top: -5px;
   }
   nav ul {
     display: none;
   }
   .menuiocn {
     top :0;
-        
+        margin-top:3px;
     position: fixed;
     padding-right: 5px;
     right: 0;
