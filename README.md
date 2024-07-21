@@ -58,9 +58,9 @@ We welcome contributions to improve this project! To contribute:
     ```bash
     git commit -m 'Add new feature'
     ```
-4. Push to the branch:
+4. Push to the new branch:
     ```bash
-    git push origin feature-branch
+    git push origin "branch"
     ```
 5. Open a pull request.
 
