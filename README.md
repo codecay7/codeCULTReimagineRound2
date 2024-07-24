@@ -69,9 +69,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Team Members
 - [Diwkar Kumar](https://github.com/codecay7)
-- [Sudhansh Mishra]
-- [Satendra Kumar]
-- [Suryansh Kumar]
+- [Sudhansh Mishra](https://github.com/Sudhanshu9000)
+- [Satendra Kumar](https://github.com/Satendra6235)
+- [Suryansh Kumar](https://github.com/suryansh3520)
 
 ## Acknowledgments
 - Thanks to Sheryians Coding School for hosting the competition.
