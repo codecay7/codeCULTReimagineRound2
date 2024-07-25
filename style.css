@@ -530,8 +530,101 @@ nav a:hover {
 }
 
 .menuiocn {
-  display: none;
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
+
+.menupopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(5px);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s;
+}
+
+.popup-content {
+  overflow: hidden;
+  position: fixed;
+  width: 85vw;
+  height: 50vh;
+  box-shadow: rgba(0, 0, 0, 0.851) 5px 5px;
+  /* backdrop-filter: blur(5px); */
+  /* background: rgba(255, 255, 255, 0.064); */
+  background: rgba(0, 0, 0, 0.14);
+
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  position: relative;
+  animation: slideDown 0.5s;
+}
+
+.popup-content a {
+  text-decoration: none;
+  color: whitesmoke;
+  display: flex;
+  font-size: 40px;
+  flex-direction: column;
+  animation: slideup 0.5s;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  text-decoration: none;
+  font-size: 80px;
+  color: black;
+}
+#closePopup {
+  color: rgb(74, 50, 183);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  from {
+    transform: translatey(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translatex(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
 .cta {
   background-color: #0056b3;
   /* BISLERI blue */

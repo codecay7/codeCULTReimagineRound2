@@ -240,12 +240,27 @@
                 <h2>Bisleri</h2>
                 <h2>Bisleri</h2>
             </div>
-            <div class="menuiocn">
+            <!-- <div class="menuiocn">
  <img src="menu_icon.svg" alt="">
             </div>
-        </nav>
+        </nav> -->
 
+        <div class="menuiocn">
+            <img src="menu_icon.svg" alt="Menu Icon" id="menuIcon">
+        </div>
 
+        <div class="menupopup" id="menuPopup">
+            <div class="popup-content">
+
+                <a href="#benefits">BENIFITS</a>
+                <a href="#products">PRODUCTS</a>
+                <a href="#FAQ-SEC">FAQs</a>
+                <a href="#contact">CONTACT</a>
+
+                <a href="#" class="close" id="closePopup">&times;</a>
+
+            </div>
+        </div>
     </header>
 
     <section class="hero">
@@ -599,7 +614,22 @@
 
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.getElementById('menuIcon');
+            const menuPopup = document.getElementById('menuPopup');
+            const closePopup = document.getElementById('closePopup');
 
+            menuIcon.addEventListener('click', function () {
+                menuPopup.style.display = 'flex';
+            });
+
+            closePopup.addEventListener('click', function (event) {
+                event.preventDefault();
+                menuPopup.style.display = 'none';
+            });
+        });
+    </script>
     <script>// preloader js
         document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function () {
